@@ -1,0 +1,1 @@
+export const OnlineAPI = 'http://18.139.50.74:8080/v2/api-docs';
