@@ -4,13 +4,13 @@ import Post from './Post';
 import Put from './Put';
 import Delete from './Delete';
 
-const postList = (data) => Post('posts',false,data);
+const postList = (data) => Post('item',data);
 
-const putList = (data, id) => Put(`posts/${id}`,false,data);
+const putList = (data, id) => Put(`item/${id}`,data);
 
-const getList = Get('posts?_sort=id&_order=desc');
+const getList = Get('checklist');
 
-const deleteList = (id) => Delete(`posts/${id}`);
+const deleteList = (id) => Delete(`item/${id}`);
 
 const API = {
     postList,
